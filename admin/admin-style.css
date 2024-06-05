@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Tambahkan ini untuk mencegah padding dan border memengaruhi lebar dan tinggi elemen */
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #263238;
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+#btn-tambah,
+#btn-login {
+  margin: 15px 0 15px 15px;
+  width: 200px;
+  border: none;
+  outline: none;
+  border: solid black 1px;
+  border-radius: 5px;
+  background: #4663ac;
+  color: white;
+  height: 35px;
+}
+table {
+  width: 40%;
+}
+
+table,
+th {
+  border: 1px solid;
+  border-collapse: collapse;
+  font-size: 15px;
+  padding: 5px 0px;
+}
+
+table,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  font-size: 15px;
+  padding: 5px 0px;
+  padding-left: 5px;
+}
+/* CSS for alternate row colors */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+#btn-tambah-admin,
+#bck-btn,
+#search-btn{
+  width: 145px;
+  height: 30px;
+  margin: 15px 0 15px 15px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+#search-btn{
+  background: #4663ac;
+}
+#btn-tambah-admin {
+  background-color: #28a745; /* Warna hijau */
+}
+#bck-btn {
+  background-color: #ff0000; /* Warna merah */
+}
+.judul{
+    text-align: center;
+}
+p{
+    margin-left: 15px;
+}
+.container {
+  border: solid black 1px;
+  height: 365px;
+  width: 450px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border: solid black 1px;
+  margin-bottom: 30px; /* Jarak antar input */
+  margin-left: 45px;
+  margin-top: 10px;
+  padding: 5px; /* Tambahkan padding agar input terlihat lebih baik */
+}
+form{
+    margin-top: 15px;
+}
+#btn-simpan {
+  width: 125px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #4663ac;
+  color: white;
+  margin-left: 150px;
+  margin-top: 25px;
+}
+label {
+  font-weight: 500;
+  margin-left: 25px;
+}
+.action button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+}
