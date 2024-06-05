@@ -50,7 +50,7 @@
                         $id++;
                         echo "
                             <td>".$id."</td>
-                            <td>".$data[1]." - ".$data[2]."</td>
+                            <td>".$data['nama_loker']." - ".$data['nama_perusahaan']."</td>
                             <td>
                             <div class='action'>
                                 <button name='detail'>Detail</button>

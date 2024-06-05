@@ -1,5 +1,6 @@
 # TES LOKER
-Hanya Berisi File Backend Saja
+Berisi File Backend dan Frontend
+File Public
 
 ```bash
 git init
@@ -16,3 +17,7 @@ git push -u -f origin main
 - Penambahan edit_profile
 - Penambahan data baik di database maupun profile yaitu jenis kelamin
 - Bug pada upload foto
+
+## 5 Juni 2024
+- Perbaikan pada Database Iklan Loker
+- Perbaikan pada Detail Iklan Loker di Perusahaan, user, dan admin
