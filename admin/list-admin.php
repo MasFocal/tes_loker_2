@@ -11,8 +11,7 @@
         include "head.php";
     ?>
     <p>DATA ADMIN</p>
-    <p></p>
-    <p></p>
+    <a href="tambah_admin.php"><button id="btn-tambah">TAMBAH ADMIN</button></a>
     <form action="" method="GET">
         <input type="text" id="search" name="search" placeholder="Masukkan Nama Admin/Username">
         <button type="submit" id="search-btn">Cari</button>
@@ -59,6 +58,5 @@
     </div>
     <p></p>
     <a href="index.php"><button id="btn-tambah">KEMBALI</button></a>
-    <a href="tambah_admin.php"><button id="btn-tambah">TAMBAH ADMIN</button></a>
 </body>
 </html>

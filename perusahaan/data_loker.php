@@ -11,11 +11,11 @@
         include "head.php";
         if(isset($_POST["detail"])) {
             $id = $_POST["id_user"];
-            header("location: dt_loker.php?id=".$id."");
+            header("location: detail_loker.php?id=".$id."");
         }
     ?>
     <p>DATA LOKER</p>
-    <a href="tb_loker.php"><button id="btn-tambah">TAMBAH LOKER</button></a>
+    <a href="tambah_loker.php"><button id="btn-tambah">TAMBAH LOKER</button></a>
     <p></p>
     <div class="tabel">
         <table>
@@ -25,7 +25,7 @@
                 <th>Detail</th>
             </tr>
             <?php
-                $query=mysqli_query($konek_db, "SELECT iklan_loker.*, perusahaan.nama_perusahaan FROM iklan_loker INNER JOIN perusahaan ON iklan_loker.id_perusahaan = perusahaan.id_perusahaan WHERE iklan_loker.id_perusahaan = '".$_SESSION['id_perusahaan']."'");
+                $query=mysqli_query($konek_db, "SELECT iklan_loker.*, perusahaan.nama_perusahaan FROM iklan_loker INNER JOIN perusahaan ON iklan_loker.nama_perusahaan = perusahaan.nama_perusahaan WHERE iklan_loker.nama_perusahaan = '".$_SESSION['nama_perusahaan']."'");
                 $id = 0;
                 while ($data = mysqli_fetch_array($query)){
             ?>
@@ -39,7 +39,7 @@
                             <td>".$data['nama_loker']."</td>
                             <td>
                             <div class='action'>
-                                <a href=\"dt_loker.php?nama=".$data['nama_loker']."\"><button name='detail'>Detail</button></a>
+                                <a href=\"detail_loker.php?nama=".$data['nama_loker']."\"><button name='detail'>Detail</button></a>
                             </div>  
                         </td>
                         ";

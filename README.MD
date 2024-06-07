@@ -29,3 +29,13 @@ git push -u -f origin main
 - Perbaikan Minor pada Profil Perusahaan (Perusahaan Page)
 - Penambahan Halaman Lamar Loker dan List Perusahaan (Coming Soon) (User Page)
 - Penambahan Minor pada Index php (Main Page)
+
+## 7 Juni 2024 (2)
+- Perbaikan minor pada Databe
+- Penambahan halaman register (Perusahaan, User)
+- Perbaikan minor pada halaman login (Perusahaan, Admin, User)
+- Perbaikan minor pada list admin, loker, perusahaan, user (Admin Page)
+- Perbaikan nama pada detail_loker dan tambah_loker (Perusahan Page)
+- Penambahan fitur pada detail_pelamar (Perusahaan Page)
+- Perbaikan minor pada edit_profile, profile, data_loker (Perusahaan Page)
+- Perbaikan minor pada edit_profile, head, status_loker (User Page)

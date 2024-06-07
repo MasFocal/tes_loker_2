@@ -16,9 +16,11 @@
     <div>
         <form action="" method="POST">
             <input type="hidden" name="id_user" value="<?php echo $data['id_user'] ?>">
+            <!--
             <div class="cek">
                 <?php include "uploader_foto.php"; ?>
             </div>
+            -->
             <br>
             <div class="cek">
                 <label id="label-gejala">Foto :</label>
@@ -39,11 +41,6 @@
             <div class="cek">
                 <label for="tanggal">Tanggal Lahir :</label>
                 <input type="date" id="input-gejala" name="tanggal_lahir" value="<?php echo $data['tanggal_lahir'] ?>" required>
-
-                <!--
-                <label id="label-gejala">Tanggal Lahir :</label>
-                <input type="text" name="tanggal_lahir" value="<?php // echo $data['tanggal_lahir'] ?>" id="input-gejala" required>
-                -->
             </div>
             <div class="cek">
                 <label id="label-gejala">Jenis Kelamin :</label>
@@ -68,7 +65,7 @@
             </div>
             <p></p>
             <div class="btn">
-                <a href="profile.php"><button type="submit" name="simpan" id="btn-tambah">SIMPAN</button></a>
+                <button type="submit" name="simpan" id="btn-tambah">SIMPAN</button>
             </div>
 
             <?php
@@ -85,19 +82,12 @@
 
                     $query="UPDATE `user` SET nama_user='$nama_user', username='$username', usia='$usia', tanggal_lahir='$tanggal_lahir', jeniskelamin='$jeniskelamin', email='$email', no_hp_user='$no_hp_user', alamat_user='$alamat_user' WHERE id_user='$id_user'";
                     $result=mysqli_query($konek_db, $query);
-                    //if($result){
-                        //echo "$nama";
-                    //}
-
                     if ($result) {
                         header('location:profile.php');
                         exit();
                     } else {
                         $notif = "Data Gagal Disimpan";
                     }
-                //if($result) header('location:profile.php');
-                //else echo "Data Gagal Disimpan";
-
                 }
             ?>
         </form>

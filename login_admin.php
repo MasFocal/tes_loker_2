@@ -26,7 +26,7 @@
             }else{
                 echo ("<script LANGUAGE='JavaScript'>
                     window.alert('Login Gagal');
-                    window.location.href='index.php';
+                    window.location.href='login_admin.php';
                     </script>");
                 exit();
             }

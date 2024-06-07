@@ -53,6 +53,7 @@
                             <td>
                             <div class='action'>
                                 <button name='detail'>Detail</button>
+                                <button name=''>HAPUS</button>
                             </div>  
                         </td>
                         ";

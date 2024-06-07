@@ -20,14 +20,14 @@
             if($data > 0){
                 $_SESSION['username']           = $uss;
                 $_SESSION['password']           = $pass;
-                $_SESSION['id_user']          = $data['id_user'];
+                $_SESSION['id_user']            = $data['id_user'];
                 $_SESSION['nama_user']          = $data['nama_user'];
                 header("location: user/index.php");
                 exit();
             }else{
                 echo ("<script LANGUAGE='JavaScript'>
                     window.alert('Login Gagal');
-                    window.location.href='index.php';
+                    window.location.href='login_user.php';
                     </script>");
                 exit();
             }

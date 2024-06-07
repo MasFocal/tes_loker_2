@@ -21,7 +21,8 @@
         <input type="text" id="search" name="search" placeholder="Masukkan Nama Loker/Perusahaan">
         <button type="submit" id="search-btn">Cari</button>
     </form>
-    <p></p>
+    <p>SILAHKAN CEK EMAIL SECARA BERKALA UNTUK MENGETAHUI HASIL LOKER</p>
+    <br>
     <div class="tabel">
         <table>
             <tr>
