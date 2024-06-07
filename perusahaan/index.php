@@ -14,7 +14,7 @@
     <div>
         <a href="profile.php"><button id="btn-tambah">PROFILE PERUSAHAAN</button></a>
         <a href="data_loker.php"><button id="btn-tambah">DATA LOKER</button></a>
-        <a href="#"><button id="btn-tambah">DATA PELAMAR</button></a>
+        <a href="data_pelamar.php"><button id="btn-tambah">DATA PELAMAR</button></a>
     </div>
     <p></p>
     <div>

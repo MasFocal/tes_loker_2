@@ -19,7 +19,7 @@
 
     ?>
     <div class="container">
-        <p class="judul">DETAIL USER</p>
+        <p class="judul">DETAIL PERUSAHAAN</p>
         <form action="" method="POST">
             <li class="list-form">
                 <label id="label-gejala">ID Perusahaan :</label>

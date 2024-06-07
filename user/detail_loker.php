@@ -10,7 +10,14 @@
     <?php 
         include"head.php";
         $id = null;
-        $id = null;
+        if(isset($_POST["lamar"])) {
+            $id = $_POST["id_user"];
+            header("location: lamar_loker.php?id=".$id."");
+        }
+        if(isset($_POST["kembali"])) {
+            $id = $_POST["id_user"];
+            header("location: list_loker.php");
+        }
         $sql = mysqli_query ($konek_db, "SELECT * FROM iklan_loker where id_loker='".$_GET['id']."'");
         $data = mysqli_fetch_array ($sql);
 
@@ -33,7 +40,19 @@
             <p></p>
         </form>
     </div>
-    <a href="lamar_loker.php"><button id="btn-tambah">LAMAR</button></a>
+    <form action="" method="POST">
+        <input type="hidden" name="id_user" value="<?= $data[0] ?>">
+        <?php
+            $id++;
+            echo "
+                <button name='lamar'>LAMAR</button>
+                <button name='kembali'>KEMBALI</button>
+            ";
+        ?>
+    </form>
+    <!--
+    <a href="lamar_loker.php?id=<?php echo ".$id."; ?>"><button id="btn-tambah">LAMAR</button></a>
     <a href="list_loker.php"><button id="btn-tambah">KEMBALI</button></a>
+    -->
 </body>
 </html>

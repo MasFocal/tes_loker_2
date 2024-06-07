@@ -33,6 +33,9 @@
             <br>
             <label id="label-gejala">Alamat :</label>
             <?php echo $data['alamat_perusahaan'] ?>
+            <br>
+            <label id="label-gejala">Deskripsi Perusahaan :</label>
+            <?php echo $data['deskripsi_perusahaan'] ?>
             <p></p>
         </form>
     </div>

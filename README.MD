@@ -21,3 +21,11 @@ git push -u -f origin main
 ## 5 Juni 2024
 - Perbaikan pada Database Iklan Loker
 - Perbaikan pada Detail Iklan Loker di Perusahaan, user, dan admin
+
+## 7 Juni 2024
+- Perbaikan pada Database (Wajib Import Database Baru)
+- Perbaikan Minor pada Detail Perusahaan (Admin Page)
+- Penambahan Data Pelamar berdasarkan Nama Perusahaan (Perusahaan Page)
+- Perbaikan Minor pada Profil Perusahaan (Perusahaan Page)
+- Penambahan Halaman Lamar Loker dan List Perusahaan (Coming Soon) (User Page)
+- Penambahan Minor pada Index php (Main Page)

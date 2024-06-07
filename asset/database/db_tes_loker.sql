@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Jun 2024 pada 08.51
+-- Waktu pembuatan: 07 Jun 2024 pada 05.37
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.1.17
 
@@ -107,11 +107,25 @@ INSERT INTO `iklan_loker` (`id_loker`, `id_perusahaan`, `nama_loker`, `nama_peru
 CREATE TABLE `pelamar` (
   `id_pelamar` int(10) NOT NULL,
   `nama_user` varchar(100) NOT NULL,
+  `nama_perusahaan` varchar(150) NOT NULL,
   `nama_loker` varchar(200) NOT NULL,
-  `file_cv` text NOT NULL,
+  `foto` text NOT NULL,
+  `usia` int(2) NOT NULL,
   `no_hp_user` int(13) NOT NULL,
-  `foto` text NOT NULL
+  `jeniskelamin` varchar(9) NOT NULL,
+  `tanggal_lahir` date NOT NULL,
+  `email` varchar(150) NOT NULL,
+  `alamat_user` text NOT NULL,
+  `file_cv` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `pelamar`
+--
+
+INSERT INTO `pelamar` (`id_pelamar`, `nama_user`, `nama_perusahaan`, `nama_loker`, `foto`, `usia`, `no_hp_user`, `jeniskelamin`, `tanggal_lahir`, `email`, `alamat_user`, `file_cv`) VALUES
+(1, 'ALL IN', 'Kartika Accessories Sukoharjo', 'Admin Toko', 'ALL_IN.png', 0, 1372272, '', '0000-00-00', 'bakso_ujer@gmail.com', '', 'upload.png'),
+(2, 'ALL IN', 'Kartika Accessories Sukoharjo', 'PIMPINAN TOKO', '1-ALL_IN.jpg', 25, 1372272, 'Perempuan', '2013-12-31', 'bakso_ujer@gmail.com', 'Jl Bakso 1234 Semarang Tengah', 'upload.png');
 
 -- --------------------------------------------------------
 
@@ -261,7 +275,7 @@ ALTER TABLE `iklan_loker`
 -- AUTO_INCREMENT untuk tabel `pelamar`
 --
 ALTER TABLE `pelamar`
-  MODIFY `id_pelamar` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pelamar` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `perusahaan`
